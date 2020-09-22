@@ -1,0 +1,88 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.container{
+    width: 100%;
+    padding:0 10% 0 10%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.header{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(238.95deg, #23286B 18.43%, rgba(29, 50, 124, 0.984553) 53.52%, rgba(10, 85, 183, 0.93) 111.46%);
+    .top-header-part{
+        padding: 10px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @media (max-width:350px) {
+            margin-bottom: 70px;
+        }
+        .logo{
+            display:flex;
+            width: 156px;
+            height: 70px;
+        }
+    }
+    .main-header-part{
+        align-self: center;
+        flex-wrap: wrap;
+        display:flex;
+        justify-content: space-between;
+        .txt-part{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .top-text{
+                padding: 3vh 0;
+                display:flex;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 35px;
+                line-height: 43px;
+                color: #ffffff;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            .bottom-text{
+                padding: 3vh 0;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                flex-direction: column;
+                color: #ffffff;
+
+            }
+        }
+        .reading-img{
+            @media (max-width:561px) {
+                display: none;
+            }
+            .img{
+                display: block;
+                max-width: 100%;
+                margin: 0 auto
+            }
+        }
+    }
+    
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
