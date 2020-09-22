@@ -15,6 +15,9 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media (max-width:449px) {
+            justify-content: center;
+        }
     }
     .left-bottom{
         display:flex;

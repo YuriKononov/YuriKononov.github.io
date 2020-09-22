@@ -22,13 +22,19 @@ body {
     background: linear-gradient(238.95deg, #23286B 18.43%, rgba(29, 50, 124, 0.984553) 53.52%, rgba(10, 85, 183, 0.93) 111.46%);
     .top-header-part{
         padding: 10px;
-        margin-bottom: 150px;
+        margin-bottom: 120px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        @media (max-width:350px) {
+        @media (max-width:1070px) {
+            align-items: center;
             margin-bottom: 70px;
+            
         }
+        @media (max-width:520px) {
+            margin: 30px auto;
+        }
+       
         .logo{
             display:flex;
             width: 156px;
@@ -37,15 +43,25 @@ body {
     }
     .main-header-part{
         align-self: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         display:flex;
         justify-content: space-between;
+        @media (max-width:1070px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .txt-part{
             display:flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
+            margin-bottom: 20spx;
+            @media (max-width: 1070px) {
+                align-items: center;
+            }
+            
+            
+            
             .top-text{
-                padding: 3vh 0;
                 display:flex;
                 font-family: Montserrat;
                 font-style: normal;
@@ -54,9 +70,15 @@ body {
                 line-height: 43px;
                 color: #ffffff;
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                @media (max-width:1070px) {
+                    margin: 40px auto;
+                    text-align: center;
+                }
+                @media (max-width:520px) {
+                    margin: 20px auto;
+                }
             }
             .bottom-text{
-                padding: 3vh 0;
                 font-family: Montserrat;
                 font-style: normal;
                 font-weight: bold;
@@ -65,11 +87,15 @@ body {
                 display: flex;
                 flex-direction: column;
                 color: #ffffff;
+                @media (max-width:1070px) {
+                    margin: 40px auto;
+                    text-align: center;
+                }
 
             }
         }
         .reading-img{
-            @media (max-width:561px) {
+            @media (max-width:1070px) {
                 display: none;
             }
             .img{
@@ -80,9 +106,4 @@ body {
         }
     }
     
-}
-.main{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
 }

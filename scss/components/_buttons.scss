@@ -1,5 +1,5 @@
 .header-buttons{
-    @media (max-width:1060px) {
+    @media (max-width:1070px) {
         display: none;
     }
     display: flex;
@@ -68,9 +68,10 @@
     height: 30px;
     background: #E94A47;
     border-radius: 5px;
-    @media (max-width:350px) {
-        margin-bottom: 120px;
+    @media (max-width:975px) {
+        align-self: center;
     }
+    
     a{
         font-family: Montserrat;
         font-style: normal;
@@ -88,7 +89,7 @@
 }
 .menu-button{
     display: flex;
-    @media (min-width:1060px) {
+    @media (min-width:1070px) {
         display: none;
     }
 }
